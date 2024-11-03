@@ -1,11 +1,10 @@
-@import "https://fonts.googleapis.com/css?family=Poppins";
+@@import url("https://fonts.googleapis.com/css?family=Poppins");
 
-/* HTML Page */
-
+/* Основные стили для страницы */
 body {
     overflow-x: hidden;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Helvetica", "Arial";
 }
 
@@ -14,10 +13,8 @@ a {
     color: rgb(52, 133, 226);
 }
 
-/* Navbar Styles */
-
+/* Navbar */
 nav {
-    padding: 0px;
     position: fixed;
     top: 0;
     left: 0;
@@ -27,22 +24,15 @@ nav {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     z-index: 1;
+    padding: 0;
 }
 
 .navlinks {
     display: flex;
     justify-content: center;
-    flex-direction: row;
     list-style-type: none;
-    flex-wrap: wrap;
-    margin: 0px;
-    padding: 0px;
-    font-size: 13px;
     padding: 12px;
-}
-
-.navicon {
-    margin-left: 25px;
+    margin: 0;
 }
 
 .navlink {
@@ -50,46 +40,34 @@ nav {
     color: #d3d3d3;
 }
 
-.responsivediv {
-    display: flex;
-}
-
-.respnavbar {
-    display: none;
-}
-
 .applelogo {
     margin-inline: 25px;
     margin-top: -2.9px;
 }
 
-/* The info box below the Navbar */
-
-.infobartext {
-    margin-top: 50px;
-    text-align: center;
+.responsivediv {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
 }
 
+/* Информационный блок под Navbar */
 .infobar {
     background-color: white;
-    height: 100%;
     padding: 10px;
-    font-size: 14px;
     display: flex;
     justify-content: center;
 }
 
-/* Main page - 1 -> iPhone 14 Pro */
+.infobartext {
+    text-align: center;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
 
+/* Главный контент */
 .mainpage1 {
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.carmenandingo.com%2Ftag%2Famerican-wedding%2F&psig=AOvVaw3_9e_mG7T8r-SFvUo0qyu3&ust=1730685780321000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjzqIuJv4kDFQAAAAAdAAAAABAx.jpg");
+    background-image: url("images/main1.jpg"); /* Замените на локальный путь к вашему изображению */
     height: 588px;
-    background-position: center -35px;
-    background-position-x: center;
+    background-position: center;
 }
 
 .mp1-text {
@@ -113,21 +91,12 @@ nav {
     font-size: 20px;
 }
 
-/* Main page - 2 -> iPhone 14 */
-
+/* Секция "О нас" */
 .mainpage2 {
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.crystalview.com%2Fblog%2Fwhat-happens-during-a-traditional-american-wedding&psig=AOvVaw3_9e_mG7T8r-SFvUo0qyu3&ust=1730685780321000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjzqIuJv4kDFQAAAAAdAAAAABAE.jpg);
-    background-position-x: center;
+    background-image: url("images/main2.jpg"); /* Замените на локальный путь к вашему изображению */
     height: 82vh;
+    background-position: center;
     width: 100vw;
-}
-
-.mp-default-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgb(34, 34, 34);
-    line-height: 30px;
 }
 
 .mp2-title1 {
@@ -141,16 +110,11 @@ nav {
     font-size: 23px;
 }
 
-.mainpagelink {
-    font-size: 20px;
-}
-
-/* Main page - 3 -> Apple watch */
-
+/* Третья секция */
 .mainpage3 {
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Flaurenkearns.com%2F2021%2F07%2F10%2Findian-american-wedding-the-grove-natirar-wedding%2F&psig=AOvVaw3_9e_mG7T8r-SFvUo0qyu3&ust=1730685780321000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjzqIuJv4kDFQAAAAAdAAAAABAJ,jpg");
+    background-image: url("images/main3.jpg"); /* Замените на локальный путь к вашему изображению */
     height: 78vh;
-    background-position-x: center;
+    background-position: center;
 }
 
 .mp3desc {
@@ -159,118 +123,15 @@ nav {
     margin-bottom: 15px;
 }
 
-/* Main page - 4 -> grid items */
-
-.mainpage4 {
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.grid-item {
-    flex-basis: 49%;
-    margin: 5px;
-}
-
-.applewatchlogo {
-    margin-top: 60px;
-}
-
-.applewatchcontainer {
-    margin-top: 50px;
-}
-
-.motherday {
-    margin-top: 50px;
-    font-size: 35px;
-    font-weight: bold;
-    width: 350px;
-    text-align: center;
-    line-height: 40px;
-}
-
-.motherday2 {
-    margin-top: 10px;
-    width: 250px;
-    text-align: center;
-    line-height: 20px;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.promo1 {
-    background-image: url("https://www.apple.com/v/home/az/images/promos/iphone-tradein/iphone_tradein_promo__d5au3rkw5kuq_large.jpg");
-    background-position-x: center;
-    height: 560px;
-
-}
-
-.promo2 {
-    background-image: url("https://www.apple.com/v/home/az/images/promos/wwdc23-announce/promo_wwdc23__b68ptht3mro2_large.jpg");
-    background-position-x: center;
+/* Стиль для промо-секций */
+.promo1, .promo2, .promo3, .promo4, .promo5, .promo6 {
+    background-position: center;
     height: 560px;
 }
 
-.promo3 {
-    background-image: url("https://www.apple.com/v/home/az/images/promos/ipad/promo_ipad__fioegapg12qi_large.jpg");
-    background-position-x: center;
-    height: 560px;
-}
-
-.promo4 {
-    background-image: url("https://www.apple.com/v/home/az/images/promos/macbook-pro-14-and-16/promo_mbp__ek7p477bkp6q_large.jpg");
-    background-position-x: center;
-    height: 560px;
-}
-
-.promo5 {
-    background-image: url("https://www.apple.com/v/home/az/images/promos/mothers-day-2023/airpods/promo__sw58lbodkmqq_large.jpg");
-    background-position-x: center;
-    height: 560px;
-}
-
-.promo6 {
-    background-image: url("https://www.apple.com/in/home/promos/apple-watch-ultra/images/promo_apple_watch_ultra__gnsqulvdc4a6_large.jpg");
-    background-position-x: center;
-    height: 560px;
-}
-
-#ipadtitle {
-    margin-top: 50px;
-    font-size: 36px;
-    font-weight: bolder;
-}
-
-#mactitle {
-    margin-top: 50px;
-    font-size: 36px;
-    font-weight: bolder;
-    color: white;
-}
-
-#macdescription {
-    margin-top: 10px;
-    color: white;
-    font-size: 19px;
-}
-
-.appletradein {
-    margin-top: 50px;
-}
-
-.wwdc23 {
-    margin-top: 350px;
-}
-
-.wwdc23text {
-    color: white;
-}
-
-/* Footer  */
-
+/* Footer */
 footer {
     background-color: rgb(243, 243, 243);
-    height: 100%;
     display: flex;
     justify-content: center;
 }
